@@ -1,0 +1,24 @@
+/*create table name as PollingTable initially the values zero first we can check any radio button then show results will avilable:---*/
+<!--run the following 4 commands in Sql server management studio -->
+
+create table PollingTable(Name varchar(50),CountingPolls int)  
+
+ insert into PollingTable(Name,CountingPolls) values ('Miguel de Cervantes',0)
+
+ insert into PollingTable(Name,CountingPolls) values ('Charles Dickens',0)
+
+ insert into PollingTable(Name,CountingPolls) values ('J.R.R. Tolkien',0)
+
+ insert into PollingTable(Name,CountingPolls) values ('Antoine de Saint-Exuper',0)
+
+
+<!-- END-->
+
+<!-- Add the following code in web.config under the configuration section-->
+
+<connectionStrings>
+    <add name="DBConnection" connectionString="Data Source=LP-PF2CQFND\SQLEXPRESS;Initial Catalog=PRASHANTH;Integrated Security=True" providerName=".NET Framework Data Provider for SQL Server"/>
+  </connectionStrings>
+
+
+<!--END-->
